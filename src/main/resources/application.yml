@@ -1,12 +1,14 @@
 server:
+  ip: 47.111.89.170
   port: 9090
 
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/chi?serverTimezone=GMT%2b8
+#    url: jdbc:mysql://localhost:3306/chi?serverTimezone=GMT%2b8
+    url: jdbc:mysql://47.111.89.170:3306/chi?serverTimezone=GMT%2b8
     username: root
-    password: 736294129
+    password: 123456
   radis:
     host: 127.0.0.1
     port: 6379
@@ -26,4 +28,5 @@ mybatis-plus:
 
 files:
   upload:
-    path: /Users/qianhe/Desktop/workspace/Vue+Spring/files/
+#    path: /Users/qianhe/Desktop/workspace/Vue+Spring/files/
+     path: /home/files
