@@ -6,7 +6,7 @@
       <el-button type="warning" @click="reset">重置</el-button>
     </div>
     <div style="margin: 10px 0">
-      <el-upload action="http://localhost:9090/file/upload" :show-file-list="false"
+      <el-upload action="'http://' + serverIp + ':9090/file/upload'" :show-file-list="false"
                  :on-success="handleFileUploadSuccess" style="display: inline-block">
         <el-button type="primary" class="ml-5">上传文件 <i class="el-icon-top"></i></el-button>
       </el-upload>
@@ -79,6 +79,8 @@
 </template>
 
 <script>
+import {serverIp} from "../../public/config";
+
 export default {
   name: "File",
   data() {
@@ -87,6 +89,7 @@ export default {
       name: '',
       multipleSelection: [],
       pageNum: 1,
+      serverIp: serverIp,
       pageSize: 10,
       total: 0
     }
