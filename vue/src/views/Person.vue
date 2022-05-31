@@ -41,7 +41,7 @@ export default {
   data() {
     return {
       form: {},
-      server: serverIp,
+      serverIp: serverIp,
       user: localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")) : {}
     }
   },

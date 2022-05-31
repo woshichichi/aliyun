@@ -94,6 +94,8 @@
 </template>
 
 <script>
+import {serverIp} from "../../public/config";
+
 export default {
   name: "Menu",
   data() {
@@ -103,6 +105,7 @@ export default {
       pageNum: 1,
       pageSize: 10,
       name: "",
+      serverIp: serverIp,
       form: {},
       dialogFormVisible: false,
       multipleSelection: [],
