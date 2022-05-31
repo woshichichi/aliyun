@@ -327,7 +327,7 @@ export default {
       window.open(url)
     },
     exp() {
-      window.open("http://localhost:9090/watergate/export")
+      window.open(`http://${serverIp}:9090/watergate/export`)
     },
     handleExcelImportSuccess() {
       this.$message.success("导入成功")
