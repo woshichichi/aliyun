@@ -26,20 +26,20 @@
     </div>
 
 
-    <el-dialog title="找回密码" :visible.sync="dialogFormVisible" width="30%" >
-      <el-form label-width="100px" size="small">
-        <el-form-item label="用户名">
-          <el-input v-model="pass.username" autocomplete="off"></el-input>
-        </el-form-item>
-        <el-form-item label="手机号">
-          <el-input v-model="pass.phone" autocomplete="off"></el-input>
-        </el-form-item>
-      </el-form>
-      <div slot="footer" class="dialog-footer">
-        <el-button @click="dialogFormVisible = false">取 消</el-button>
-        <el-button type="primary" @click="passwordBack">重置密码</el-button>
-      </div>
-    </el-dialog>
+<!--    <el-dialog title="找回密码" :visible.sync="dialogFormVisible" width="30%" >-->
+<!--      <el-form label-width="100px" size="small">-->
+<!--        <el-form-item label="用户名">-->
+<!--          <el-input v-model="pass.username" autocomplete="off"></el-input>-->
+<!--        </el-form-item>-->
+<!--        <el-form-item label="手机号">-->
+<!--          <el-input v-model="pass.phone" autocomplete="off"></el-input>-->
+<!--        </el-form-item>-->
+<!--      </el-form>-->
+<!--      <div slot="footer" class="dialog-footer">-->
+<!--        <el-button @click="dialogFormVisible = false">取 消</el-button>-->
+<!--        <el-button type="primary" @click="passwordBack">重置密码</el-button>-->
+<!--      </div>-->
+<!--    </el-dialog>-->
   </div>
 </template>
 

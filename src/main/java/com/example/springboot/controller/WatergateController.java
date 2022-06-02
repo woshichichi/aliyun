@@ -148,7 +148,7 @@ public class WatergateController {
 //        if (currentUser.getRole().equals("ROLE_USER")) {
 //            queryWrapper.eq("user", currentUser.getUsername());
 //        }
-        //去数据
+        //存取数据
         String jsonStr = stringRedisTemplate.opsForValue().get(Constants.WATERGATE_KEY);
         Page<Watergate> page;
         if (StrUtil.isBlank(jsonStr)) {
