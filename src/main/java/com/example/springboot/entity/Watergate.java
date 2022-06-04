@@ -26,10 +26,10 @@ import java.util.Date;
 @Setter
 @ToString
 @TableName("watergate")
-@ApiModel(value = "Watergate对象", description = "")
+@ApiModel(value = "Watergate", description = "")
 public class Watergate implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;

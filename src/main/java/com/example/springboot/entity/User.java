@@ -24,11 +24,10 @@ import java.util.Date;
 @Getter
 @Setter
 @TableName("sys_user")
-@ApiModel(value = "User对象", description = "")
+@ApiModel(value = "User", description = "")
 @ToString
 public class User implements Serializable {
 
-    private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("id")
     @TableId(value = "id", type = IdType.AUTO)
@@ -49,15 +48,6 @@ public class User implements Serializable {
 
     @ApiModelProperty("电话")
     private String phone;
-
-    @ApiModelProperty("地址")
-    private String address;
-
-    @ApiModelProperty("创建时间")
-    private Date createTime;
-
-    @ApiModelProperty("头像")
-    private String avatarUrl;
 
     @ApiModelProperty("角色")
     private String role;

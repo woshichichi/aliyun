@@ -76,7 +76,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             // 设置用户的菜单列表
             List<Menu> roleMenus = getRoleMenus(role);
 
-
             flushRedis(Constants.USER_KEY);
 
              stringRedisTemplate.opsForValue().set(Constants.USER_KEY, JSONUtil.toJsonStr(one), 30L, TimeUnit.MINUTES);

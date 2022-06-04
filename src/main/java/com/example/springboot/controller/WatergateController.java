@@ -141,6 +141,7 @@ public class WatergateController {
         System.out.println("7");
         QueryWrapper<Watergate> queryWrapper = new QueryWrapper<>();
         queryWrapper.orderByDesc("id");
+        System.out.println("asa");
         if (!"".equals(name)) {
             queryWrapper.like("name", name);
         }
